@@ -23,10 +23,19 @@
 
   /*GENERAL STYLES*/
   * {font-family: Arial, sans-serif; line-height: 1.3em;}
-  #header-content, #footer, .CTA-button {background-color:#5196d3;}
+  .CTA-button{
+   background-color:#5196d3; 
+  }
+  #header-content, #footer{background-color:#5196d3; border-left: 20px solid #C2C2BA; border-right: 20px solid #C2C2BA;}
+  #header-content {
+    border-top: 20px solid #c2c2ba;
+  }
+  #footer {
+    border-bottom: 20px solid #C2C2BA;
+  }
   .header-text, #social-icons{color:#fff; }
   .padding-class {padding: .9em;}
-  #main-content, #contain {border-left: 1px solid #000; border-right: 1px solid #000; }
+  #main-content, #contain {border-left: 20px solid #C2C2BA; border-right: 20px solid #C2C2BA; }
   #bodyTable {margin: 20px 0;}  /* set top/bottom margin of containing table */
   p, h4, a, li, a.phone {color: #000;}   /* resolve issue of text displaying as purple in gmail */
   p {margin-bottom: 1em; }
@@ -46,7 +55,6 @@
   a.phone {text-decoration: underline;}
   p.small-bold {font-weight: bold; margin-bottom: 0; color: #00529a;}
   .medium-box {height: 5em; width: 7em; display: inline-block; background-color: #666; margin: .2em;}
-  #three-boxes {margin: 2em 0;}
   p.titles {margin: 0; padding: 0; margin-bottom: 5px;}
 
   /*quad section styles*/
@@ -79,6 +87,45 @@
   .quad-rem {font-size: 1.4rem;}
   .footer-rem {font-size: 1.6rem}
 
+  .padding-class .review-title{
+      font-size: 35px;
+      text-align: center;
+      font-weight: bold;
+      padding: 60px 0 0;
+      margin-bottom: 0;
+      color: #1e1e1e;
+  }
+
+  .padding-class .date{
+    text-align: center;
+    font-size: 26px;
+    color: #999999;
+    text-decoration: none !important;
+  }
+
+  .last-paragraph{
+    font-size: 20px;
+    text-align: center;
+    color: #1e1e1e;
+    padding-top: 30px;
+  }
+
+  .doctor-statistics .chart{
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+  }
+
+  .percentage {
+    font-size: 70px;
+    color: #bcbcbc;
+    margin-bottom: 0;
+  }
+
+  .percentage.right {
+    color: #5196d3 !important;
+  }
+
   </style>
 </head>
 
@@ -92,18 +139,13 @@
             <!--~~~~~~~~~~~~~~~~~~ 1. HEADER SECTION ~~~~~~~~~~~~~~~~~~-->
             <tr>
               <td align="center" valign="top" class="header-rem">
-
                 <table border="0" cellpadding="0" cellspacing="0" width="600" id="header-content">
                   <tr>
-                    <td align="left" valign="middle" id="header-img">
-                      <a href="#"><img src="http://placehold.it/240x56" alt="" /></a>
-                    </td>
-                    <td align="center" valign="middle">
-                      <h4 class="header-text right">Ice Cream Dream:<br />the Internet Sandwich</h4>
+                    <td align="center" valign="middle" id="header-img">
+                      <a href="http://checkedup.com/"><img src="images/logo_large.png" alt="CheckedUp"/></a>
                     </td>
                   </tr>
                 </table>
-
               </td>
             </tr>
 
@@ -114,12 +156,11 @@
                   <tr>
                     <td align="left" valign="top" class="padding-class">
 
-                      <p>nonsense here</p>
+                      <p class="review-title">Your Week in Review</p>
 
-                      <p>Can you please help us underst andCan ye hs unde rndCan you please help us under stai ndCan you please help us un der standCa n you please help us un dersta ndCan you please help us understa nd</p>
+                      <p class="date"><span>June 25 - July 3</span></p>
                       
-                      <p class="last-paragraph">how we’re doing by answering the questions inhow we’re doing by answering the questions inhow we’re doing by answering the questions in</p>
-
+                      <p class="last-paragraph">Below you will find how many patients were educated with CheckedUp this week, as well as how many patients were completed on the Practice Portal. Only completed patients will influence your CheckedUp Conversion Rate.</p>
                     </td>
                   </tr>
                   
@@ -129,57 +170,83 @@
                       <table border="0" cellpadding="0" cellspacing="0" class="CTA-button">
                         <tr>
                           <td align="center" valign="middle">
-                            <a href="#">Bloop</a>
+                            <a href="#">doctor image</a>
                           </td>
                         </tr>
                       </table>
                     </td>
                   </tr>
-                  
-
                   <tr>
-                    <td align="left" valign="top" class="padding-class">
-
-                      <p>femalesandmalesfemalesandmales questionshow question immediate</p>
-                      
-                      <!-- three gray boxes -->
-                      <table id="three-boxes" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <td align="left" valign="top">
+                      <table class="doctor-statistics" border="0" cellpadding="0" cellspacing="0" width="100%">
                         <tr>
-
-                          <td align="center" valign="middle">
-                            <p class="titles">Angela</p>
-                            <a href="#">
-                              <img src="http://placehold.it/156x115" alt="" />
-                            </a>
+                          <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray;">
+                            <img src="images/graph_1.png" alt="" />
+                            <p class="titles">Patients Educated with CheckedUp</p>
+                            <p class="titles"><span style="font-weight: bold;">patients educated this week /</span>physician’s weekly target</p>
                           </td>
 
-                          <td align="center" valign="middle">
-                            <p class="titles">Andrew</p>
-                            <a href="#">
-                              <img src="http://placehold.it/156x115" alt="" />
-                            </a>
+                          <td align="right" valign="middle" class="chart">
+                            <img src="images/graph_2.png" alt="" />
+                            <p class="titles">Patients Completed in Practice Portal</p>
+                            <p class="titles"><span style="font-weight: bold;">total patients completed /</span>total of patients educated</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray; border-top: 1px dashed gray;">
+                            <p class="percentage">70%</p>
+                            <p style="color:#999999; font-size: 20px">Doctor’s Historic Conversion Rate</p>
+                            
                           </td>
 
-                          <td align="center" valign="middle">
-                            <p class="titles">BottleBoyz</p>
-                            <a href="#">
-                              <img src="http://placehold.it/156x115" alt="" />
-                            </a>
+                          <td align="right" valign="middle" class="chart" style="border-top: 1px dashed gray;">
+                            <p class="percentage right">53%</p>
+                            <p style="color:#1e1e1e; font-size: 20px">Conversion Rate with CheckedUp</p>
                           </td>
-
                         </tr>
                       </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="top" style="padding-top: 70px;">
+                      <table border="0" cellpadding="0" cellspacing="0" class="CTA-button">
+                        <tr>
+                          <td align="center" valign="middle">
+                            <a href="#">doctor image</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top">
+                      <table class="doctor-statistics" border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray;">
+                            <img src="images/graph_1.png" alt="" />
+                            <p class="titles">Patients Educated with CheckedUp</p>
+                            <p class="titles"><span style="font-weight: bold;">patients educated this week /</span>physician’s weekly target</p>
+                          </td>
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quidem voluptas atque fuga qui doloribus modi fugit ad porro, accusantium sit expedita eius obcaecati vitae.</p>
+                          <td align="right" valign="middle" class="chart">
+                            <img src="images/graph_2.png" alt="" />
+                            <p class="titles">Patients Completed in Practice Portal</p>
+                            <p class="titles"><span style="font-weight: bold;">total patients completed /</span>total of patients educated</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray; border-top: 1px dashed gray;">
+                            <p class="percentage">70%</p>
+                            <p style="color:#999999; font-size: 20px">Doctor’s Historic Conversion Rate</p>
+                            
+                          </td>
 
-                      <p>We look forward to hearing how much you love your new wife!</p>
-
-                      <p>
-                        Do not forget about it<br />
-                        Dream Team808-plus<br />
-                        <a class="phone" href="tel:1-555-555-5555">555-555-5555</a>
-                      </p>
-
+                          <td align="right" valign="middle" class="chart" style="border-top: 1px dashed gray;">
+                            <p class="percentage right">53%</p>
+                            <p style="color:#1e1e1e; font-size: 20px">Conversion Rate with CheckedUp</p>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
                   </tr>
                 </table>
@@ -188,12 +255,18 @@
             </tr>
 
             <!--~~~~~~~~~~~~~~~~~~ 3. QUAD SECTION ~~~~~~~~~~~~~~~~~~-->
-            
-            <tr>
 
               <td align="center" valign="top">
                 <!-- the #contain table serves merely to add containing border: see CSS rules for details -->
                 <table border="0" cellpadding="0" cellspacing="0" width="600" id="contain">
+                  <tr>
+                    <td>
+                      <p style="text-align: center;">The Conversion Rate with CheckedUp is solely dependent on the amount of patients that have been completed in the Practice Portal. The more up-to-date and complete the Practice Portal is, the more accurate your conversion rate will be.</p>
+                    </td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                  
                   <tr>
 
                       <td align="center" valign="top" id="quad" class="quad-rem">
