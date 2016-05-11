@@ -24,7 +24,7 @@
   /*GENERAL STYLES*/
   * {font-family: Arial, sans-serif; line-height: 1.3em;}
   .CTA-button{
-   background-color:#5196d3; 
+   background-color:#5196d3;
   }
   #header-content, #footer{background-color:#5196d3; border-left: 20px solid #C2C2BA; border-right: 20px solid #C2C2BA;}
   #header-content {
@@ -35,7 +35,7 @@
   }
   .header-text, #social-icons{color:#fff; }
   .padding-class {padding: .9em;}
-  #main-content, #contain {border-left: 20px solid #C2C2BA; border-right: 20px solid #C2C2BA; }
+  #main-content, #contain, #graphics{border-left: 20px solid #C2C2BA; border-right: 20px solid #C2C2BA; }
   #bodyTable {margin: 20px 0;}  /* set top/bottom margin of containing table */
   p, h4, a, li, a.phone {color: #000;}   /* resolve issue of text displaying as purple in gmail */
   p {margin-bottom: 1em; }
@@ -80,7 +80,9 @@
   .blurb p {font-size: .75em;}
   #footer-info p {font-size: .6em;}
   .CTA-button a {font-size: 1.1em;}
-  p.titles {font-size: .8em;}
+  p.titles {font-size: 18px;}
+  p.subtitles-left{color: #2db57c; font-size: 12px;}
+  p.subtitles-right{color: #3781ba; font-size: 12px;}
 
   .header-rem {font-size: 1.3rem;}
   .main-rem {font-size: 1.4rem;}
@@ -104,10 +106,11 @@
   }
 
   .last-paragraph{
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: #1e1e1e;
     padding-top: 30px;
+    line-height: 30px;
   }
 
   .doctor-statistics .chart{
@@ -126,6 +129,30 @@
     color: #5196d3 !important;
   }
 
+  .conversion-rate {
+    text-align: center;
+    padding: 15% 5% 5%;
+    line-height: 30px;
+    font-size: 16px;
+    color: #1e1e1e;
+  }
+
+  .improve-conversion {
+    display: inline-block;
+    text-align: center;
+    width: 53%;
+    border: 3px solid #3C81BF;
+    border-radius: 58px;
+    line-height: 60px;
+    font-size: 18px;
+    color: #3C81BF;
+  }
+
+  .graphic-caption {
+    font-size: 12px;
+    color: gray;
+  }
+
   </style>
 </head>
 
@@ -134,8 +161,8 @@
       <tr>
         <td align="center" valign="top" id="bodyCell">
           <!-- container table for email: all content will be nested within this table -->
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            
+          <tr border="0" cellpadding="0" cellspacing="0" width="100%">
+
             <!--~~~~~~~~~~~~~~~~~~ 1. HEADER SECTION ~~~~~~~~~~~~~~~~~~-->
             <tr>
               <td align="center" valign="top" class="header-rem">
@@ -159,11 +186,11 @@
                       <p class="review-title">Your Week in Review</p>
 
                       <p class="date"><span>June 25 - July 3</span></p>
-                      
+
                       <p class="last-paragraph">Below you will find how many patients were educated with CheckedUp this week, as well as how many patients were completed on the Practice Portal. Only completed patients will influence your CheckedUp Conversion Rate.</p>
                     </td>
                   </tr>
-                  
+
                   <!-- button -->
                   <tr>
                     <td align="center" valign="top">
@@ -183,20 +210,20 @@
                           <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray;">
                             <img src="images/graph_1.png" alt="" />
                             <p class="titles">Patients Educated with CheckedUp</p>
-                            <p class="titles"><span style="font-weight: bold;">patients educated this week /</span>physician’s weekly target</p>
+                            <p class="subtitles-left"><span style="font-weight: bold;">patients educated this week / </span>physician’s weekly target</p>
                           </td>
 
                           <td align="right" valign="middle" class="chart">
                             <img src="images/graph_2.png" alt="" />
                             <p class="titles">Patients Completed in Practice Portal</p>
-                            <p class="titles"><span style="font-weight: bold;">total patients completed /</span>total of patients educated</p>
+                            <p class="subtitles-right"><span style="font-weight: bold;">total patients completed / </span>total of patients educated</p>
                           </td>
                         </tr>
                         <tr>
                           <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray; border-top: 1px dashed gray;">
                             <p class="percentage">70%</p>
                             <p style="color:#999999; font-size: 20px">Doctor’s Historic Conversion Rate</p>
-                            
+
                           </td>
 
                           <td align="right" valign="middle" class="chart" style="border-top: 1px dashed gray;">
@@ -225,20 +252,20 @@
                           <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray;">
                             <img src="images/graph_1.png" alt="" />
                             <p class="titles">Patients Educated with CheckedUp</p>
-                            <p class="titles"><span style="font-weight: bold;">patients educated this week /</span>physician’s weekly target</p>
+                            <p class="subtitles-left"><span style="font-weight: bold;">patients educated this week / </span>physician’s weekly target</p>
                           </td>
 
                           <td align="right" valign="middle" class="chart">
                             <img src="images/graph_2.png" alt="" />
                             <p class="titles">Patients Completed in Practice Portal</p>
-                            <p class="titles"><span style="font-weight: bold;">total patients completed /</span>total of patients educated</p>
+                            <p class="subtitles-right"><span style="font-weight: bold;">total patients completed / </span>total of patients educated</p>
                           </td>
                         </tr>
                         <tr>
                           <td align="left" valign="middle" class="chart" style="border-right: 1px dashed gray; border-top: 1px dashed gray;">
                             <p class="percentage">70%</p>
                             <p style="color:#999999; font-size: 20px">Doctor’s Historic Conversion Rate</p>
-                            
+
                           </td>
 
                           <td align="right" valign="middle" class="chart" style="border-top: 1px dashed gray;">
@@ -255,104 +282,149 @@
             </tr>
 
             <!--~~~~~~~~~~~~~~~~~~ 3. QUAD SECTION ~~~~~~~~~~~~~~~~~~-->
-
+            <tr>
               <td align="center" valign="top">
-                <!-- the #contain table serves merely to add containing border: see CSS rules for details -->
                 <table border="0" cellpadding="0" cellspacing="0" width="600" id="contain">
                   <tr>
                     <td>
-                      <p style="text-align: center;">The Conversion Rate with CheckedUp is solely dependent on the amount of patients that have been completed in the Practice Portal. The more up-to-date and complete the Practice Portal is, the more accurate your conversion rate will be.</p>
+                      <p class="conversion-rate">The Conversion Rate with CheckedUp is solely dependent on the amount of patients that have been completed in the Practice Portal. The more up-to-date and complete the Practice Portal is, the more accurate your conversion rate will be.</p>
                     </td>
                   </tr>
                   <tr>
-                      <td align="center" valign="top" id="quad" class="quad-rem">
-                        <!-- set width of gray section below -->
-                        <table border="0" cellpadding="0" cellspacing="0" width="564" id="quad-content">
-                          <tr>
-                            <td class="quad-padding">
-                              <table border="0" cellpadding="0" cellspacing="0">
-                                <tr>
-                                  <td align="left" valign="middle">
-
-                                    <!-- INDUSTRY ICONS -->
-                                    <table>
-                                      <tr>
-                                        <td align="center">
-                                          <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                        </td>
-                                        <td align="center">
-                                          <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td align="center">
-                                          <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                        </td>
-                                        <td align="center">
-                                          <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                        </td>
-                                      </tr>
-                                    </table>
-
-                                  </td>
-
-                                  <td align="left" valign="top" class="blurb">
-                                    <h4>Your Satisfaction is </h4>
-
-                                    <p>Investing is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key</p>
-                                  </td>
-
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-              </td>
-            </tr>
-
-            <!--~~~~~~~~~~~~~~~~~~ 4. FOOTER SECTION ~~~~~~~~~~~~~~~~~~-->
-            <tr>
-              <td align="center" valign="top" class="footer-rem">
-                <table border="0" cellpadding="0" cellspacing="0" width="600">
-                  <tr>
-                    <td align="center" valign="middle">
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%" id="footer">
-
-                            <tr>
-                              <td align="center" valign="middle" id="footer-logo-container">
-                                <a href=""><img src="http://placehold.it/270x81" alt="" /></a>
-                              </td>
-                            </tr>
-
-                            <!-- SOCIAL ICONS -->
-                            <tr>
-                              <td align="center" valign="middle" id="social-icons">
-                                <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                                <a href="#"><img src="http://placehold.it/60x60" alt="" /></a>
-                              </td>
-                            </tr>
-
-                      </table>
+                    <td>
+                      <div style="width: 100%; text-align: center; padding-bottom: 70px; border-bottom: 1px solid gray;">
+                        <div class="improve-conversion"><span>Improve your Conversion Rate</span></div>
+                      </div>
                     </td>
                   </tr>
-                  
-                  <tr>
-                    <td align="center" valign="top" id="footer-info" class="padding-class">
-                      <p class="address-fix">This email was sent by is the key Products<br />
-                      1000 Parkway, Ste 5, ExWife, CA<br />
-                      USA</p>
-                      <p>&copy; 2015 is the key. All rights reserved.</p>
-                    </td>
-                  </tr>
-                  
                 </table>
               </td>
             </tr>
+            <tr>
+              <td align="center" valign="top">
+                <table border="0" cellpadding="0" cellspacing="0" width="600" id="graphics">
+                  <tr>
+                    <td>
+                      <div style="width: 100%; text-align: center; padding-top: 10%">
+                        <div style="display: inline-block;">
+                          <p style="font-size: 20px;">Patients-per-week who viewed CheckedUp</p>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center" valign="middle">
+                      <img src="images/graph_3.png" alt="patients per week" style="padding-top: 30px;">
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <td align="center" valign="middle" style="padding: 5% 0 10%;">
+                      <span class="graphic-caption">Dotted lines represent weekly goals</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            <!--</tr>-->
+              <!--<td align="center" valign="top">-->
+                <!--&lt;!&ndash; the #contain table serves merely to add containing border: see CSS rules for details &ndash;&gt;-->
+                <!--<table border="0" cellpadding="0" cellspacing="0" width="600" id="contain">-->
+                  <!--<tr>-->
+                      <!--<td align="center" valign="top" id="quad" class="quad-rem">-->
+                        <!--&lt;!&ndash; set width of gray section below &ndash;&gt;-->
+                        <!--<table border="0" cellpadding="0" cellspacing="0" width="564" id="quad-content">-->
+                          <!--<tr>-->
+                            <!--<td>-->
+                              <!--<p style="text-align: center;">The Conversion Rate with CheckedUp is solely dependent on the amount of patients that have been completed in the Practice Portal. The more up-to-date and complete the Practice Portal is, the more accurate your conversion rate will be.</p>-->
+                            <!--</td>-->
+                          <!--</tr>-->
+                          <!--<tr>-->
+                            <!--<td class="quad-padding">-->
+                              <!--<table border="0" cellpadding="0" cellspacing="0">-->
+                                <!--<tr>-->
+                                  <!--<td align="left" valign="middle">-->
+
+                                    <!--&lt;!&ndash; INDUSTRY ICONS &ndash;&gt;-->
+                                    <!--<table>-->
+                                      <!--<tr>-->
+                                        <!--<td align="center">-->
+                                          <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                        <!--</td>-->
+                                        <!--<td align="center">-->
+                                          <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                        <!--</td>-->
+                                      <!--</tr>-->
+                                      <!--<tr>-->
+                                        <!--<td align="center">-->
+                                          <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                        <!--</td>-->
+                                        <!--<td align="center">-->
+                                          <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                        <!--</td>-->
+                                      <!--</tr>-->
+                                    <!--</table>-->
+
+                                  <!--</td>-->
+
+                                  <!--<td align="left" valign="top" class="blurb">-->
+                                    <!--<h4>Your Satisfaction is </h4>-->
+
+                                    <!--<p>Investing is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key is the key</p>-->
+                                  <!--</td>-->
+
+                                <!--</tr>-->
+                              <!--</table>-->
+                            <!--</td>-->
+                          <!--</tr>-->
+                        <!--</table>-->
+                      <!--</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+              <!--</td>-->
+            <!--</tr>-->
+
+            <!--~~~~~~~~~~~~~~~~~~ 4. FOOTER SECTION ~~~~~~~~~~~~~~~~~~-->
+            <!--<tr>-->
+              <!--<td align="center" valign="top" class="footer-rem">-->
+                <!--<table border="0" cellpadding="0" cellspacing="0" width="600">-->
+                  <!--<tr>-->
+                    <!--<td align="center" valign="middle">-->
+                      <!--<table border="0" cellpadding="0" cellspacing="0" width="100%" id="footer">-->
+
+                            <!--<tr>-->
+                              <!--<td align="center" valign="middle" id="footer-logo-container">-->
+                                <!--<a href=""><img src="http://placehold.it/270x81" alt="" /></a>-->
+                              <!--</td>-->
+                            <!--</tr>-->
+
+                            <!--&lt;!&ndash; SOCIAL ICONS &ndash;&gt;-->
+                            <!--<tr>-->
+                              <!--<td align="center" valign="middle" id="social-icons">-->
+                                <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                                <!--<a href="#"><img src="http://placehold.it/60x60" alt="" /></a>-->
+                              <!--</td>-->
+                            <!--</tr>-->
+
+                      <!--</table>-->
+                    <!--</td>-->
+                  <!--</tr>-->
+
+                  <!--<tr>-->
+                    <!--<td align="center" valign="top" id="footer-info" class="padding-class">-->
+                      <!--<p class="address-fix">This email was sent by is the key Products<br />-->
+                      <!--1000 Parkway, Ste 5, ExWife, CA<br />-->
+                      <!--USA</p>-->
+                      <!--<p>&copy; 2015 is the key. All rights reserved.</p>-->
+                    <!--</td>-->
+                  <!--</tr>-->
+
+                <!--</table>-->
+              <!--</td>-->
+            <!--</tr>-->
 
           </table>
         </td>
